@@ -2,6 +2,8 @@
 'Cause there weren't enough of these already.
 Made specifically with Skyward Sword in mind, as its BRSTMs don't have extensions - most of the patchers out there assume there is one.
 
+Should theoretically work with other games, but then again, it might not. 
+
 Put the BRSAR file and all the BRSTMS into one folder. The BRSTMs need to be named as they are in the original filesystem. 
 Run the program to automatically change the filesize in the BRSAR. 
 
