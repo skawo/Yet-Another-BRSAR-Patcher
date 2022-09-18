@@ -28,6 +28,12 @@ namespace YABRSARP
 
             foreach (string file in Files)
             {
+                if (file.EndsWith(".exe"))
+                    continue;
+
+                if (file.EndsWith(".brsar_out"))
+                    continue;
+
                 int pos = FindBytes(brsarF, Encoding.ASCII.GetBytes(Path.GetFileName(file)));
 
                 if (pos < 0)
@@ -37,7 +43,7 @@ namespace YABRSARP
                 }
 
                 pos -= 0x1B;
-                pos -= 0x4;
+                pos -= 0x5;
 
                 brsarF[pos] = 0x7F;
                 brsarF[pos + 1] = 0xFF;
