@@ -42,9 +42,8 @@ namespace YABRSARP
                     continue;
                 }
 
-                pos -= 0x1B;
-                pos -= 0x5;
-
+                pos -= 0x20;
+                
                 brsarF[pos] = 0x7F;
                 brsarF[pos + 1] = 0xFF;
                 brsarF[pos + 2] = 0xFF;
